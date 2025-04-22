@@ -20,7 +20,7 @@ Think of this as generating an AI-stylized, interpretation, of the current scene
 
 ### Image Reference to Explore Thinking Process/Explaining A Plan of Action
 
-![Image](https://github.com/user-attachments/assets/cc18375d-4385-46ec-adb0-196f2e9b343d)
+![Image](https://github.com/user-attachments/assets/4010447d-458a-4e39-9c0f-150df2b0d5d9)
 
 ## Requirements
 
