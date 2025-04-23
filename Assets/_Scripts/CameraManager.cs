@@ -16,7 +16,7 @@ public class CameraManager : MonoBehaviour
     public RenderTexture _AIrenderTexture = null;
     
     [SerializeField]
-    public Texture2D _image = null;
+    public Texture2D capturedPhoto = null;
 
     private void OnEnable()
     {
@@ -43,18 +43,17 @@ public class CameraManager : MonoBehaviour
         _AIrenderTexture = RenderTexture.active;
 
         //Create a new Texture2D that matches our AI-Cameras dimensions
-        _image = new Texture2D(aiCamera.targetTexture.width, aiCamera.targetTexture.height, TextureFormat.RGB24, true);
+        capturedPhoto = new Texture2D(aiCamera.targetTexture.width, aiCamera.targetTexture.height, TextureFormat.RGB24, true);
 
         //Read the pixels from the AI-Camera's RenderTexture 
-        _image.ReadPixels(new Rect(0, 0, aiCamera.targetTexture.width, aiCamera.targetTexture.height), 0, 0);
+        capturedPhoto.ReadPixels(new Rect(0, 0, aiCamera.targetTexture.width, aiCamera.targetTexture.height), 0, 0);
 
         //Apply or save the Image
-        _image.Apply();
+        capturedPhoto.Apply();
 
         //Change the Active texture back to the main cameras
         RenderTexture.active = _mainrenderTexture;
         
-    }
-
+    } 
    
 }
