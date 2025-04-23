@@ -22,10 +22,6 @@ Think of this as generating an AI-stylized, interpretation, of the current scene
 
 ![Image](https://github.com/user-attachments/assets/81fdeab5-2aae-49a2-bb04-caafbb20a5a5)
 
-### Actual Results
-
-![Image](https://github.com/user-attachments/assets/a8fd2195-ff59-4f80-ac82-7d8fdecb981c)
-
 ## Requirements
 
 - Unity Hub
